@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Besondere Website - Startseite</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+</head> 
 <body>
 
     <header>
-        <h1>Meine Besondere Website</h1>
+        <img src="images/logo.png" alt="Mein Logo" id="logo"> <!-- Hinzugefügt -->
     </header>
 
     <nav>
@@ -18,31 +18,63 @@
         <a href="contact.html">Kontakt</a>
     </nav>
 
-    <section id="home" style="background-image: url('/images/image1.jpg');">
+    <section id="home" style="background-image: url('/images/img1.png');">
         <div class="hero-content">
-            <h2>Willkommen auf unserer besonderen Website</h2>
-            <p>Entdecken Sie eine Welt voller Informationen und Möglichkeiten.</p>
+            <h2>Willkommen bei Strittmatter</h2>
+            <p>Ihrem zuverlässigen Partner für hochwertige Fertigungsdienstleistungen</p>
         </div>
-    </section>
-
-    <section id="features">
-        <h2>Unsere Features</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed tincidunt, mauris non tincidunt rhoncus, ipsum metus rhoncus metus.</p>
     </section>
 
     <section id="services">
         <h2>Unsere Dienstleistungen</h2>
-        <p>Curabitur ullamcorper euismod tellus, in luctus nisl imperdiet in. Vestibulum vulputate semper lacus, eu malesuada libero posuere nec.</p>
+        <div class="service">
+            <div class="service-text">
+                <p>Mit unserer umfangreichen Erfahrung und unserem Fachwissen bieten wir eine breite Palette von Dienstleistungen an, um Ihren spezifischen Anforderungen gerecht zu werden. <br>
+                Unsere Dienstleistungen umfassen CNC-Drehen und CNC-Fräsen, die es uns ermöglichen, präzise und komplexe Teile mit hoher Genauigkeit und Wiederholbarkeit herzustellen. Wir verwenden hochmoderne Maschinen und Werkzeuge, um sicherzustellen, dass Ihre Teile die höchsten Qualitätsstandards erfüllen.
+                Darüber hinaus bieten wir Schleifen an, um Oberflächen zu verfeinern und Toleranzen zu erreichen, die mit anderen Fertigungsmethoden schwer zu erreichen sind. Unsere Werkstoffe sind von höchster Qualität und werden sorgfältig ausgewählt, um die Anforderungen Ihrer Anwendung zu erfüllen. </p> <br>
+                <p>Wir bieten auch Beschriftungen an, um Ihre Teile zu kennzeichnen und zu identifizieren. Unsere Beschriftungsdienste umfassen verschiedene Techniken wie Lasergravur, Ätzung und Siebdruck.
+                Für Kunden, die Komplettlösungen suchen, bieten wir Baugruppen an, bei denen wir mehrere Teile zu einer Einheit zusammenfügen. Unsere Baugruppen können auch Weiterbearbeitungsdienste wie Schweißen, Montage und Oberflächenbehandlung umfassen.
+                Bei Strittmatter sind wir bestrebt, unseren Kunden hochwertige Produkte und Dienstleistungen zu bieten. Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen zu erfahren und wie wir Ihnen helfen können, Ihre Fertigungsziele zu erreichen.</p>
+            </div>
+            <img src="/images/img2.png" alt="Service 1">
+        </div>
+        <!-- <div class="service">
+            <div class="service-text">
+                <p>Wir bieten auch Beschriftungen an, um Ihre Teile zu kennzeichnen und zu identifizieren. Unsere Beschriftungsdienste umfassen verschiedene Techniken wie Lasergravur, Ätzung und Siebdruck.
+                Für Kunden, die Komplettlösungen suchen, bieten wir Baugruppen an, bei denen wir mehrere Teile zu einer Einheit zusammenfügen. Unsere Baugruppen können auch Weiterbearbeitungsdienste wie Schweißen, Montage und Oberflächenbehandlung umfassen.
+                Bei Strittmatter sind wir bestrebt, unseren Kunden hochwertige Produkte und Dienstleistungen zu bieten. Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen zu erfahren und wie wir Ihnen helfen können, Ihre Fertigungsziele zu erreichen.</p>
+            </div>
+            <img src="/images/image1.jpg" alt="Service 2">
+        </div> -->
+    </section>
+
+    <section class="gallery">
+        <div class="slider">
+            <div class="slide">
+                <img src="/images/img5.png" alt="Bild 1">
+            </div>
+            <div class="slide">
+                <img src="/images/img6.png" alt="Bild 2">
+            </div>
+            <div class="slide">
+                <img src="/images/img3.png" alt="Bild 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
     </section>
 
     <section id="testimonials">
         <h2>Kundenstimmen</h2>
-        <p>Phasellus eu erat ac tellus vulputate commodo. Fusce non vestibulum metus. Maecenas et efficitur dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>"Die Beschriftungen, die Strittmatter für meine Teile gemacht hat, waren genau das, was ich wollte. Sie wurden schnell und professionell gemacht und haben meine Erwartungen übertroffen. Ich kann sie nur wärmstens empfehlen." - <em>Feinmechanik und Optik AG</em><br>
+            "Die Dienstleistungen von Strittmatter haben meine Erwartungen übertroffen. Die Qualität der Teile, die sie herstellen, ist ausgezeichnet und sie liefern immer pünktlich. Ich bin sehr zufrieden und kann sie nur wärmstens empfehlen." - <em>Max Mustermann</em> <br>
+            "Ich habe Strittmatter für die Herstellung von Teilen für meine Firma verwendet und war sehr zufrieden mit dem Ergebnis. Die Teile waren von hoher Qualität und wurden schnell geliefert. Ich kann sie nur wärmstens empfehlen." - <em>Metallmeister GmbH</em></p>
     </section>
 
     <footer>
-        &copy; 2024 Meine Besondere Website. Alle Rechte vorbehalten.
+        &copy; 2024 Strittmatter. Alle Rechte vorbehalten.
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
